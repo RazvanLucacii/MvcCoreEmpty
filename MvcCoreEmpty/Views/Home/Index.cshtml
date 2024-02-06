@@ -1,0 +1,22 @@
+﻿@section imagenhome {
+    <img src="~/images/img2.png" style="width: 150px; height: 150px" />
+}
+
+
+<h1 style="color: blue" id="mensajevista">
+    La Casa Triste XD
+</h1>
+
+<button id="botonvista" class="btn btn-warning">
+    Boton Vista
+</button>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $("#botonvista").click(function () {
+                $("#mensajevista").text("Estoy mas perdio que en un cumple");
+            })
+        })
+    </script>
+}
